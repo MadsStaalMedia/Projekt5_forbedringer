@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
+    <script src="js/header.js" defer></script>
+
+    <script src="js/accordion_oplevelser.js" defer></script>
+
+    <title>Hesselgaard</title>
+    
+</head>
+
+<body>
+
+    <header id="header">
+        <div class="top__bar">
+            <div class="header__button" id="burgerKnap">
+                <span class="burger__symbol">☰</span>
+            </div>
+
+            <div id="myNav" class="overlay">
+                <span class="closebtn" id="krydsKnap">&times;</span>
+                <div id="menuContainer" class="overlay-content"></div>
+            </div>
+
+            <div class="header__desktopNav">
+                <a href="index.html">Hjem</a>
+                <a href="ophold.html">Ophold</a>
+                <a href="faciliteter.html">Faciliteter</a>
+                <a href="oplevelser.html">Oplevelser</a>
+                <a href="eventsal.html">Eventsal</a>
+                <a href="kontakt.html">Kontakt</a>
+                <button class="book">BOOK</button>
+            </div>
+
+            <div class="header__logo">
+                <svg width="100%" height="100%" viewBox="0 0 591 591" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:1.5;">
+                    <g transform="matrix(0.893785,0,0,0.893785,-468.771,-2520.05)">
+                        <circle cx="854.844" cy="3149.89" r="299.58" style="fill:none;stroke:white;stroke-width:27.97px;"/>
+                    </g>
+                    <g transform="matrix(1,0,0,1,-524.652,-2869.17)">
+                        <g transform="matrix(1.27522,0,0,1.6336,-45.7813,68.2014)">
+                            <path d="M642.893,1919.05C642.893,1903.47 655.524,1890.84 671.104,1890.84C671.883,1890.84 672.655,1890.87 673.418,1890.94C687.917,1892.11 699.315,1904.25 699.315,1919.05L699.315,1975.47L642.893,1975.48L642.893,1919.05Z" style="fill:rgb(95,130,153);"/>
+                        </g>
+                        <g transform="matrix(3.31048,0,0,1.13647,-1045.66,1150.23)">
+                            <path d="M549.826,1886.83L549.826,1887.52L535.029,1887.52L535.029,1691.01L549.826,1691.01L549.826,1740.92L577.251,1740.92L577.251,1691.01L592.048,1691.01L592.048,1887.52L577.251,1887.52L577.251,1886.83L577.254,1886.83L577.254,1805.99C577.254,1805.67 577.253,1805.36 577.251,1805.05L577.251,1802.06L577.19,1802.06C576.516,1781.58 570.629,1765.56 563.466,1765.56C555.85,1765.56 549.677,1783.66 549.677,1805.99L549.677,1886.83L549.826,1886.83Z" style="fill:white;"/>
+                        </g>
+                        <g transform="matrix(2.54664,0,0,2.48779,-666.034,-1896.55)">
+                            <path d="M527.364,1997.06C552.504,1986.99 573.437,1972.95 584.231,1949.34C596.139,1969.85 614.868,1985.62 639.631,1997.18" style="fill:none;stroke:white;stroke-width:4.14px;stroke-linecap:round;"/>
+                        </g>
+                        <g transform="matrix(2.54664,0,0,2.48779,-922.795,-1341.89)">
+                            <path d="M647.26,1776.37L620.43,1863.99" style="fill:none;stroke:white;stroke-width:4.14px;stroke-linecap:round;"/>
+                        </g>
+                        <g transform="matrix(-2.54664,0,0,2.48779,2562.65,-1341.89)">
+                            <path d="M647.26,1776.37L620.43,1863.99" style="fill:none;stroke:white;stroke-width:4.14px;stroke-linecap:round;"/>
+                        </g>
+                        <g transform="matrix(-2.37741,0.276558,-0.2831,2.02515,2968.1,-635.105)">
+                            <path d="M647.26,1819.11L600.711,1858.78" style="fill:none;stroke:white;stroke-width:4.19px;stroke-linecap:round;"/>
+                        </g>
+                        <g transform="matrix(2.37741,0.276558,0.2831,2.02515,-1328.25,-635.105)">
+                            <path d="M647.26,1819.11L600.711,1858.78" style="fill:none;stroke:white;stroke-width:4.19px;stroke-linecap:round;"/>
+                        </g>
+                        <g transform="matrix(2.47349,0,0,3.29732,-885.746,-2777.78)">
+                            <path d="M689.581,1764.01C692.287,1760.15 697.7,1760.15 700.406,1762.08C703.112,1764.01 703.112,1767.87 700.406,1771.72C698.511,1774.62 693.64,1777.51 689.581,1779.44C685.521,1777.51 680.65,1774.62 678.756,1771.72C676.049,1767.87 676.049,1764.01 678.756,1762.08C681.462,1760.15 686.874,1760.15 689.581,1764.01Z" style="fill:rgb(95,130,153);"/>
+                        </g>
+                    </g>
+                </svg>
+            </div>
+        </div>
+    </header>
+    
+    <main>
+
+        <div class="hero"  id="oplevelser">
+
+            <div class="hero__textbox">
+
+                <h1>Oplevelser</h1>
+
+                <h3>Hindsholm er i sig selv en perle</h3>
+
+            </div>
+
+        </div>
+
+        <div class="desktopGrid_oplevelser">
+            <div id="textArea">
+                <h2>Området byder på en masse aktiviteter</h2>
+
+                <p>Kerteminde og omegn byder på et væld af naturoplevelser, kulturhistorie, lokale specialiteter og spændende aktiviteter. 
+                    <br><br>
+                    Området rummer alt fra idylliske landsbyer og unikke museer til storslåede naturområder, dyreoplevelser og spetakulærer spisesteder. 
+                    <br><br>
+                    Uanset om man søger ro, kultur, natur eller gastronomi, er der et bredt udvalg af oplevelser lige i nærheden 
+                    - perfekt til både korte og længere fornøjelser.
+                </p>
+            </div>
+
+        <div id="accordion">
+            <div class="accordion__section" id="tourism">
+                <img src="img/oplevelser/fjord_og_baelt.webp" class="accordion__section--image" alt="Billede af Fjord og Bælt">
+                <button class="accordion__button">Turistmål</button>
+            </div>
+
+            <div class="panel" id="tourismPanel">
+                <div>
+                    <img src="img/oplevelser/fjord_og_baelt.webp" class="accordion__panel--image" alt="billede af Fjord og Bælt"> 
+                    <h2>Fjord & Bælt</h2>
+                    <p>Fjord & Bælt er en kombineret turistattraktion og forskningsinstitution med vores magiske hav i fokus. Deres mission er at inspirere til bevarelse af naturen omkring os gennem oplevelse, fascination og forståelse.</p>
+                    <a href="https://fjordbaelt.dk/">Læs mere her</a>
+                </div>
+                <br>
+                <div>
+                    <img src="img/oplevelser/johannes_larsen_museet.webp" class="accordion__panel--image" alt="Billede af Johannes Larsen Museet">
+                    <h2>Johannes Larsen museet</h2>
+                    <p>Johannes og Alhed Larsen skabte ikke alene en malerisk ramme om deres liv, men tillige et gæstfrit mødested, der satte sit præg på dansk kunst og kultur. Besøg et levende kunstnerhjem fra begyndelsen af forrige århundrede.</p>
+                    <a href="https://johanneslarsenmuseet.dk">Læs mere her</a>
+                </div>
+                <br>
+                <div>
+                    <img src="img/oplevelser/syberg_kvaeg.webp" class="accordion__panel--image" alt="Billede af Kvæg">
+                    <h2>Syberg Kvæg</h2>
+                    <p>Oplev de flotte skotske højlandskvæg hos Syberg Kvæg. Der er kvægsafari, gårdbutik og forskellige aktiviteter, der løbende bliver arrangeret.</p>
+                    <a href="https://sybergkvaeg.dk/">Læs mere her</a>
+                </div>
+                <br>
+                <div>
+                    <img src="img/oplevelser/ladby_skib.webp" class="accordion__panel--image" alt="Billede af Ladbyskibet">
+                    <h2>Ladbyskibet</h2>
+                    <p>På Vikingemuseet Ladby bringes vikingernes historie til live ved at genskabe vikingernes landskab, deres skibe og bygninger. Deltag i spændende aktiviteter og oplev skiftende udstillinger om vikingernes verden.</p>
+                    <a href="https://vikingemuseetladby.dk/">Læs mere her</a>
+                </div>
+                <br>
+                <div>
+                    <img src="img/oplevelser/great_northern_golf_and_spa.webp" class="accordion__panel--image" alt="Billede af Great Nothern Golf og Spa">
+                    <h2>Great Northern Golf og Spa</h2>
+                    <p>Great Northern golf og Spa er verdensklasse beliggende i naturskønne Kerteminde. Her får du en imponerende flot golf-oplevelse (forudsat handicap), en lækker Spa oplevelse og udsøgte retter i restauranten.</p>
+                    <a href="https://greatnorthern.dk/">Læs mere her</a>
+                </div>
+                <br>
+                <div>
+                    <img src="img/oplevelser/fyns_hoved.webp" class="accordion__panel--image" alt="Billede af Fyns Hoved">
+                    <h2>Fyns Hoved</h2>
+                    <p>Fyns Hoved på spidsen af Hindsholm er et sandt overflødighedshorn af naturoplevelser. Med den imponerende Baesbanke i hovedsæde kan I her opleve et mangfoldigt dyreliv, installationer fra 2. verdenskrig og ældgammelt istidslandskab. Lige til en frisk tur på cykel på kun 15 km fra campingpladsen.</p>
+                    <a href="https://naturstyrelsen.dk/find-et-naturomraade/naturguider/fyn/fyns-hoved">Læs mere her</a>
+                </div>
+                <br>
+                <div>
+                    <img src="img/oplevelser/skov.webp" class="accordion__panel--image" alt="Billede af Kalhave Skoven">
+                    <h2>Kalhave-skoven</h2>
+                    <p>Tæt på Hesselgaard Glamping ligger Kalhave-skoven. Ligegyldig hvilken årstid I kommer på kan den nydes. Se anemonerne i foråret, byg en hule om sommeren og pluk brombær om efteråret. Skoven er en del af en dejlig gåtur på 2,5 eller 5 km.</p>
+                </div>
+                <br>
+            </div>
+            <br>                   
+
+            <div class ="accordion__section" id="food">
+                <img src="img/oplevelser/rudolf_mathis.webp" class="accordion__section--image" alt="Billede af en restaurant indendørs">
+                <button class="accordion__button">Spisesteder</button>
+            </div>
+
+            <div class="panel" id="foodPanel">
+                <div>
+                    <img src="img/oplevelser/kirkeladen.webp" class="accordion__panel--image" alt="Billede af Restaurant Kirkeladen">
+                    <h2>Restaurant Kirkeladen</h2>
+                    <p>Den gamle kirkelade fra omkring 1500 tallet, indbyder til en hyggelig og afslappende atmosfære overfor sine gæster.</p>
+                    <a href="https://cafekirkeladen.dk/">Læs mere her</a>
+                </div>
+                <br>
+                <div>
+                    <img src="img/oplevelser/vaffelhuset.webp" class="accordion__panel--image" alt="Billede af Vaffelhuset">
+                    <h2>Vaffelhuset</h2>
+                    <p>Vaffelhuset i Trollegade er den ultimative is-oplevelse. Duften af de friskbagte vafler lokker i hele Kerteminde bymidte og alene køen udenfor butikken siger alt. Du får ikke bedre is andre steder! Har du mod på den helt store “Kerteminde Special” ?</p>
+                    <a href="https://vaffelhuset.dk/">Læs mere her</a>
+                </div>
+                <br>
+                <div>
+                    <img src="img/oplevelser/roegeri.webp" class="accordion__panel--image" alt="Billede af Røgeri Hindsholm">
+                    <h2>Røgeri Hindsholm</h2>
+                    <p>Røgeriet fremstiller udelukkende varer af ypperste kvalitet, med henblik på at levere til førende danske gourmet restauranter. Ligger kun 3 km gang gennem skoven fra Camp Hverringe. Røgeriet har både gårdbutik og trattoria.</p>
+                    <a href="https://www.xn--rgerihindsholm-qqb.dk/">Læs mere her</a>
+                </div>
+                <br>
+                <div>
+                    <img src="img/oplevelser/fynshoved_gaardbutik.webp" class="accordion__panel--image" alt="Billede af Fyns Hoved Gårdbutik">
+                    <h2>Fynshoved Café og gårdbutik</h2>
+                    <p>I hyggelige omgivelser finder du Fyns hoved Café & Gårdbutik, med et udvalg af hjemmebagte kager, enkle frokostretter og kød fra vores egne naturplejedyr Fynshoved Galloway oksekød og Fynshoved lam.</p>
+                    <a href="https://fynshovedgaardbutik.dk/">Læs mere her</a>
+                </div>
+                <br>
+                <div>
+                    <img src="img/oplevelser/firenze.webp" class="accordion__panel--image" alt="Billede af Ristorante Firenze">
+                    <h2>Ristorante Firenze</h2>
+                    <p>Restaurant Firenze er en hyggelig familieejet restaurant. Den ligger i hjertet af den fantastiske havneby Kerteminde.</p>
+                    <a href="https://www.rist-firenze.dk/">Læs mere her</a>
+                </div>
+                <br>
+                <div>
+                    <img src="img/oplevelser/lulus_cafe.webp" class="accordion__panel--image" alt="Billede af Lulus Cafe">
+                    <h2>Lulus Cafe</h2>
+                    <p>Indrettet med henblik på, at kaffe, vin og andet godt der kan nydes i afslappede og hyggelige rammer, og med en formidabel udsigt til Kerteminde fjor.</p>
+                    <a href="https://www.luluscafe.dk/">Læs mere her</a>
+                </div>
+                <br>
+                <div>
+                    <img src="img/oplevelser/rudolf_mathis.webp" class="accordion__panel--image" alt="Billede af Rudolf Mathis">
+                    <h2>Rudolf Mathis</h2>
+                    <p>Restaurant Rudolf Mathis er en eksklusiv gourmet restaurant fyldt med atmosfære beliggende i det særlige fiskermiljø i hjertet af Kerteminde. Her får du forkælelse som sent glemmer.</p>
+                    <a href="https://www.rudolf-mathis.dk/">Læs mere her</a>
+                </div>
+                <br>
+                <div>
+                    <img src="img/oplevelser/eat.webp" class="accordion__panel--image" alt='Billede af Restaurant "EAT"'>
+                    <h2>Restaurant “EAT”</h2>
+                    <p>På Great Northern Golf & SPA kan restaurant “EAT” opleves til både frokost og middage. Restauranten tilbyder Dansk-fransk kogekunst, udsøgte vine og uhøjtidelig personlig betjening med omtanke i højsædet.</p>
+                    <a href="https://greatnorthern.dk/restaurant/?gad_source=1&gclid=Cj0KCQjw3bm3BhDJARIsAKnHoVVC6h4qXp-BBzQ80rdENkwjUyzM9QgASwrU64mvgRKr5mTKee3jQaAaAhvvEALw_wcB">Læs mere her</a>
+                </div>
+                <br>
+                <div>
+                    <img src="img/oplevelser/kaffehuset.webp" class="accordion__panel--image" alt="Billede af Kaffehuset, Johannes Larsen Museet">
+                    <h2>Kaffehuset, Johannes Larsen Museet</h2>
+                    <p>En vigtig del af et besøg på Johannes Larsen Museet er et besøg i den hyggelige café, Kaffehuset. Herfra er der både udsigt ud over Storebælt og til haven.</p>
+                    <a href="https://johanneslarsenmuseet.dk/kaffehuset/">Læs mere her</a>
+                </div>
+                <br>
+            </div>
+
+            
+        </div>
+
+        <div class ="accordion__section" id="map">
+                <a href="pdf/kort.pdf"><img src="img/oplevelser/kort.webp" class="accordion__section--image" alt="Billede af kort over vandreruter, Hindsholm"></a>
+                <button class="accordion__button">Vandreruter</button>
+            </div>
+
+            <div class="panel" id="mapPanel">
+                <div>
+                    <h2>6 stier og en Ø</h2>
+                    <p>Hindsholm byder på seks naturskønne stier: Bøgegjerg Gård, Bøgebjerg Skov og Bøgebjerg Strand viser områdets bakker, skov og kyst. Målestrand og Stavre følger åbne landskaber og strandenge, mens Mølleskov fører gennem tæt, varieret skov.</p>
+                    <p>Ud for kysten ligger Romsø, en fredfyldt ubeboet ø med skov, strand, fritgående dådyr og storslået natur.</p>
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+
+    <footer>
+
+        <div class="footer__news">
+            <h2>Nyhedsbrev</h2>
+
+            <form>
+
+                <label for="navn">Navn</label><br>
+                <input type="text" id="navn" name="navn"><br>
+                <label for="email">E-mail</label><br>
+                <input type="email" id="email" name="email"><br>
+                <input type="submit" value="submit"><br>
+
+            </form>
+        </div>
+
+        <div class="footer__contact">
+            <h3>Kontakt</h3>
+
+            <p>
+                Hessselgaard Glamping<br>
+                Blæsenborgvej 76<br>
+                5380 Dalby<br>
+                <br><br>
+                Bibi Foged Rasmussen<br>
+                Tlf.: <a href="tel+4525155433"> +45 2515 5433</a>
+                <br>
+                <a href="mailto:bibi@hesselgaard.dk"> bibi@hesselgaard.dk</a>
+                <br><br>
+                Flemming Foged Rasmussen<br>
+                <a href="tel+4521196338">+45 2119 6338</a> 
+                <br>
+                <a href="mailto:flemming@hesselgaard.dk">flemming@hesselgaard.dk</a>
+            </p>
+        </div>
+
+        <div class="footer__nav">
+            <h3>Glamping telte</h3> 
+            <p>
+                <a href="ophold.html#silva">Silva</a><br>
+                <a href="ophold.html#aqua">Aqua</a><br>
+                <a href="ophold.html#terra">Terra</a><br>
+            </p>
+
+            <h3>Info</h3>
+            <p> 
+                <a href="kontakt.html">Om os</a><br>
+                <a href="ophold.html">Ophold</a><br>
+                <a href="faciliteter.html">Faciliteter</a><br>
+                <a href="oplevelser.html">Seværdigheder</a><br>
+                <a href="eventsal.html">Møde & event</a><br>
+                <a href="booking.html">Priser og pakkeløsninger</a><br>
+                <br><br>
+            </p>
+        </div>
+        <div class="footer__info">
+            <p>
+                Cookiepolitik</p>
+                <p>Fortrolighedspolitik</p>
+                <p>Handelsbetingelser
+            </p>
+        </div>
+
+        <div class="footer__some">
+            <a href="https://www.facebook.com/p/Hesselgaard-Glamping-100093300235879/">
+                <svg xmlns="http://www.w3.org/2000/svg" width="55" height="54" viewBox="0 0 46 46" fill="none">
+                    <path d="M41.3996 22.9996C41.3996 12.8365 33.1627 4.59961 22.9996 4.59961C12.8365 4.59961 4.59961 12.8365 4.59961 22.9996C4.59961 31.6246 10.5437 38.8696 18.5577 40.8605V28.6202H14.7627V22.9996H18.5577V20.5774C18.5577 14.3171 21.3896 11.4134 27.5421 11.4134C28.7065 11.4134 30.719 11.6434 31.5455 11.8734V16.9621C31.1143 16.919 30.3596 16.8902 29.418 16.8902C26.3993 16.8902 25.2349 18.033 25.2349 21.0015V22.9996H31.2437L30.2087 28.6202H25.2277V41.263C34.3415 40.1634 41.3996 32.408 41.3996 22.9996Z" fill="white"/>
+                </svg>
+            </a>
+            <a href="https://www.instagram.com/hesselgaard_glamping/">
+                <svg xmlns="http://www.w3.org/2000/svg" width="55" height="54" viewBox="0 0 55 54" fill="none">
+                    <path d="M27.5268 17.2966C22.0697 17.2797 17.6354 21.6166 17.6182 26.9744C17.601 32.3322 22.0182 36.686 27.4752 36.7028C32.9322 36.7197 37.3666 32.3828 37.3838 27.025C37.401 21.6672 32.9838 17.3135 27.5268 17.2966ZM27.4752 20.7054C31.0158 20.6885 33.8947 23.4982 33.9119 26.9744C33.9291 30.4507 31.0674 33.2772 27.5268 33.2941C23.9861 33.311 21.1072 30.5013 21.09 27.025C21.0729 23.5488 23.9346 20.7222 27.4752 20.7054ZM35.5018 16.9C35.5018 15.6513 36.533 14.6388 37.8049 14.6388C39.0768 14.6388 40.108 15.6513 40.108 16.9C40.108 18.1488 39.0768 19.1613 37.8049 19.1613C36.533 19.1613 35.5018 18.1488 35.5018 16.9ZM46.6479 19.195C46.5018 16.166 45.7971 13.4829 43.5369 11.2722C41.2854 9.0616 38.5525 8.36973 35.4674 8.21785C32.2877 8.04066 22.7572 8.04066 19.5775 8.21785C16.501 8.36129 13.7682 9.05316 11.508 11.2638C9.24785 13.4744 8.55176 16.1575 8.39707 19.1866C8.2166 22.3085 8.2166 31.6657 8.39707 34.7875C8.54316 37.8166 9.24785 40.4997 11.508 42.7104C13.7682 44.921 16.4924 45.6129 19.5775 45.7647C22.7572 45.9419 32.2877 45.9419 35.4674 45.7647C38.5525 45.6213 41.2854 44.9294 43.5369 42.7104C45.7885 40.4997 46.4932 37.8166 46.6479 34.7875C46.8283 31.6657 46.8283 22.3169 46.6479 19.195ZM42.54 38.1372C41.8697 39.791 40.5721 41.065 38.8791 41.7316C36.3439 42.7188 30.3283 42.491 27.5268 42.491C24.7252 42.491 18.701 42.7104 16.1744 41.7316C14.49 41.0735 13.1924 39.7994 12.5135 38.1372C11.508 35.6482 11.74 29.7419 11.74 26.9913C11.74 24.2407 11.5166 18.326 12.5135 15.8454C13.1838 14.1916 14.4814 12.9175 16.1744 12.251C18.7096 11.2638 24.7252 11.4916 27.5268 11.4916C30.3283 11.4916 36.3525 11.2722 38.8791 12.251C40.5635 12.9091 41.8611 14.1832 42.54 15.8454C43.5455 18.3344 43.3135 24.2407 43.3135 26.9913C43.3135 29.7419 43.5455 35.6566 42.54 38.1372Z" fill="white"/>
+                </svg>
+            </a>
+        </div>
+
+    </footer>
+
+</body>
+</html>
