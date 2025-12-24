@@ -189,13 +189,14 @@ footer {
             height: 50px;
             border-radius: 8px;
             background-color: var(--terra-color);
-            border: none;
+            border: 1px solid var(--black);
             color: var(--white);
             text-align: center;
             font-size: 1rem;
             font-style: normal;
             font-weight: 700;
             line-height: normal;
+            text-shadow: 1px 1px 1px var(--black);
         }
 
     }
@@ -276,13 +277,14 @@ p {
     height: 50px;
     border-radius: 8px;
     background-color: var(--terra-color);
-    border: none;
+    border: 1px solid var(--black);
     color: var(--white);
     text-align: center;
     font-size: 1rem;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+    text-shadow: 1px 1px 1px var(--black);
 }
 
 .book:hover {
