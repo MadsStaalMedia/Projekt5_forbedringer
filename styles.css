@@ -166,11 +166,13 @@ footer {
     p {
         color: var(--white);
         text-shadow: 1px 1px 1px var(--black);
+        line-height: 200%;
     }
 
     a {
         color: var(--white);
         text-shadow: 1px 1px 1px var(--black);
+        line-height: 200%;
     }
 
     form {
