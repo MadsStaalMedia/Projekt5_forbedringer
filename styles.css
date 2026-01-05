@@ -473,15 +473,14 @@ p {
     hr {
         margin: 41px 5%;
     }
-    
-    h1 {
-        color: var(--black);
-        text-align: center;
-    }
 
     .book {
         position: relative;
         left: calc(50% - 73px);
+    }
+
+    p {
+        margin-top: 10%;
     }
 }
 
