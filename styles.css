@@ -1062,6 +1062,12 @@ p {
         width: 100%;
     }
 
+    .desktopGrid_tentDiv {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+
     .desktopGrid#facility {
         justify-content: space-between;
         margin-left: 5vw;
@@ -1103,9 +1109,9 @@ p {
     }
 
     .tentDiv {
-        width: 50vw;
-        margin-left: 25vw;
-        border-radius: 25vw 25vw 0 0;
+        width: 70vw;
+        margin-left: 15vw;
+        border-radius: 15vw 15vw 0 0;
     }
 
     .tentDiv__img {
@@ -1125,15 +1131,6 @@ p {
 
     .tentScroll {
         justify-content: flex-start;
-    }
-
-    .tentDiv__facilities {
-        width: 50%;
-        justify-content: left;
-
-        div {
-            margin-bottom: 12px;
-        }
     }
 
 
@@ -1363,6 +1360,11 @@ p {
         }
     }
 
+    .tentDiv {
+        width: 50vw;
+        margin-left: 25vw;
+        border-radius: 25vw 25vw 0 0;
+    }
     
 
 
@@ -1389,6 +1391,21 @@ p {
             button {
                 margin-right: 4vw;
             }
+        }
+    }
+
+    .desktopGrid_tentDiv {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+
+    .tentDiv__facilities {
+        width: 50%;
+        justify-content: left;
+
+        div {
+            margin-bottom: 12px;
         }
     }
 }
