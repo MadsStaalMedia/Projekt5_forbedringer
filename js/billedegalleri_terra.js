@@ -1,11 +1,11 @@
-const billederTerra = ["img/terra/terra_1.webp","img/terra/terra_2.webp","img/terra/terra_3.webp"];
+const billederTerra = [{img:"img/terra/terra_1.webp", alt:"et bord og fire stole foran teltet Terra"}, {img:"img/terra/terra_2.webp", alt:"en kommode i teltet Terra"}, {img:"img/terra/terra_3.webp", alt:"sengene i teltet Terra"}];
 
 let prikviserTerra = document.getElementById("carousel_prikkerTerra");
 let billedeviserTerra = document.getElementById("carousel_billedeTerra");
 
 for (let i = 0; i < billeder.length; i++) {
     prikviserTerra.innerHTML += "<div class='carousel_prikTerra'></div>";
-    billedeviserTerra.innerHTML += "<img class='carousel_billedeTerra fade' src="+billederTerra[i]+">";
+    billedeviserTerra.innerHTML += "<img class='carousel_billedeTerra fade' src="+billederTerra[i].img+" alt="+billederTerra[i].alt+">";
 }
 
 const slidesTerra = document.getElementsByClassName("carousel_billedeTerra");

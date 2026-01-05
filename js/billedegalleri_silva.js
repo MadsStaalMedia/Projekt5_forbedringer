@@ -1,11 +1,11 @@
-const billederSilva = ["img/silva/silva_1.webp","img/silva/silva_2.webp","img/silva/silva_3.webp"];
+const billederSilva = [{img:"img/silva/silva_1.webp", alt:"indersiden af teltet Silva"}, {img:"img/silva/silva_2.webp", alt:"et bord og fire stole foran teltet Silva"}, {img:"img/silva/silva_3.webp", alt:"dekorationer fra teltet Silva"}];
 
 let prikviserSilva = document.getElementById("carousel_prikkerSilva");
 let billedeviserSilva = document.getElementById("carousel_billedeSilva");
 
 for (let i = 0; i < billeder.length; i++) {
     prikviserSilva.innerHTML += "<div class='carousel_prikSilva'></div>";
-    billedeviserSilva.innerHTML += "<img class='carousel_billedeSilva fade' src="+billederSilva[i]+">";
+    billedeviserSilva.innerHTML += "<img class='carousel_billedeSilva fade' src="+billederSilva[i].img+" alt='"+billederSilva[i].alt+"'>";
 }
 
 const slidesSilva = document.getElementsByClassName("carousel_billedeSilva");

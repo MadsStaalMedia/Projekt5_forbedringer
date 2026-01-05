@@ -1,11 +1,11 @@
-const billeder = ["img/aqua/aqua_1.webp","img/aqua/aqua_2.webp","img/aqua/aqua_3.webp"];
+const billeder = [{img:"img/aqua/aqua_1.webp", alt:"teltet Aqua set udefra"}, {img:"img/aqua/aqua_2.webp", alt:"indersiden af teltet Aqua"}, {img:"img/aqua/aqua_3.webp", alt:"træerne udenfor teltet Aqua"}];
 
 let prikviser = document.getElementById("carousel_prikker");
 let billedeviser = document.getElementById("carousel_billede");
 
 for (let i = 0; i < billeder.length; i++) {
      prikviser.innerHTML += "<div class='carousel_prik'></div>";
-    billedeviser.innerHTML += "<img class='carousel_billede fade' src="+billeder[i]+">";
+    billedeviser.innerHTML += "<img class='carousel_billede fade' src="+billeder[i].img+" alt="+billeder[i].alt+">";
 }
 
 const slides = document.getElementsByClassName("carousel_billede");
