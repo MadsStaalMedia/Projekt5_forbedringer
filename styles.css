@@ -1125,12 +1125,9 @@ p {
         width: 50%;
         grid-template-areas: 
         'text'
-        '1fr'
-        '1fr'
-        '1fr'
-        '1fr'
-        '1fr'
-        '1fr'
+        '1fr 1fr'
+        '1fr 1fr'
+        '1fr 1fr'
         '1fr';
         justify-content: left;
     }
