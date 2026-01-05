@@ -513,6 +513,7 @@ p {
 
     .facilityButton {
         grid-area: button;
+        border: 1px solid var(--black);
     }
 }
 
@@ -567,6 +568,7 @@ p {
     line-height: normal;
     position: relative;
     left: calc(50% - 156px);
+    text-shadow: 1px 1px 1px var(--black);
 
 }
 
