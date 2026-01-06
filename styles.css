@@ -209,6 +209,12 @@ footer {
     }
 }
 
+.footer__some {
+    a {
+            text-decoration: none;
+        }
+}
+
 main {
     background-color: var(--background-color);
     margin: 0;
@@ -1265,7 +1271,7 @@ p {
     footer {
         display: grid;
         grid-template-areas: 
-        'contact nav news'
+        'news contact nav'
         'info info some';
         padding-right: 5vw;
     }
@@ -1297,10 +1303,6 @@ p {
         display: flex;
         align-items: flex-end;
         justify-content: flex-end;
-
-        a {
-            text-decoration: none;
-        }
     }
 
     .hero#index {
