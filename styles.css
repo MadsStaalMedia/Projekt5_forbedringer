@@ -1070,18 +1070,7 @@ p {
     }
 
     .desktopGrid#facility {
-        justify-content: space-between;
-        margin-left: 5vw;
-        margin-right: 5vw;
-        width: 90vw;
-
-        p {
-            margin-left: 0;
-        }
-
-        h2 {
-            margin-left: 0;
-        }
+        flex-direction: column;
     }
 
     .tentDiv#facility {
@@ -1113,6 +1102,7 @@ p {
         width: 70vw;
         margin-left: 15vw;
         border-radius: 35vw 35vw 0 0;
+        max-width: 1000px;
     }
 
     .tentDiv__img {
@@ -1247,24 +1237,6 @@ p {
         height: 400px;
     }
 
-    .textBox#desktopImg {
-        display: block;
-    }
-
-    .textBox#desktopImg2 {
-        display: block;
-        border-radius: 0;
-        margin-top: 0;
-        background: lightgray url(img/div/ophold_aqua_background.webp) center / 1024px 686px no-repeat;
-    }
-
-    .textBox#desktopImg3 {
-        display: block;
-        border-radius: 0;
-        margin-top: 0;
-        background: lightgray url(img/div/ophold_terra_background.webp) center / 1024px 686px no-repeat;
-    }
-
 }
 
 @media only screen and (min-width: 1000px) {
@@ -1362,6 +1334,24 @@ p {
 
 @media only screen and (min-width: 1600px) {
 
+    .desktopGrid#facility {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-between;
+        margin-left: 5vw;
+        margin-right: 5vw;
+        width: 90vw;
+
+        p {
+            margin-left: 0;
+        }
+
+        h2 {
+            margin-left: 0;
+        }
+    }
+
     header {
         height: 98px;
 
@@ -1402,5 +1392,23 @@ p {
         div {
             margin-bottom: 12px;
         }
+    }
+    
+    .textBox#desktopImg {
+        display: block;
+    }
+
+    .textBox#desktopImg2 {
+        display: block;
+        border-radius: 0;
+        margin-top: 0;
+        background: lightgray url(img/div/ophold_aqua_background.webp) center / 1024px 686px no-repeat;
+    }
+
+    .textBox#desktopImg3 {
+        display: block;
+        border-radius: 0;
+        margin-top: 0;
+        background: lightgray url(img/div/ophold_terra_background.webp) center / 1024px 686px no-repeat;
     }
 }
