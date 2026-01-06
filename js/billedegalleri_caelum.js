@@ -1,11 +1,11 @@
-const billederCaelum = ["img/caelum/caelum_1.webp","img/caelum/caelum_2.webp","img/caelum/caelum_3.webp"];
+const billederCaelum = [{img:"img/caelum/caelum_1.webp", alt:"hyggeligt billede af Caelum"},{img:"img/caelum/caelum_2.webp", alt:"en sofa og en lænestol omkring et kaffebord"},{img:"img/caelum/caelum_3.webp", alt:"Caelum med et pænt dækket bord i midten og sofaer og lænestole ved siden af"}];
 
 let prikviserCaelum = document.getElementById("carousel_prikkerCaelum");
 let billedeviserCaelum = document.getElementById("carousel_billedeCaelum");
 
 for (let i = 0; i < billederCaelum.length; i++) {
     prikviserCaelum.innerHTML += "<div class='carousel_prikCaelum'></div>";
-    billedeviserCaelum.innerHTML += "<img class='carousel_billedeCaelum fade' src="+billederCaelum[i]+">";
+    billedeviserCaelum.innerHTML += "<img class='carousel_billedeCaelum fade' src="+billederCaelum[i].img+" alt="+billederCaelum[i].alt+">";
 }
 
 const slidesCaelum = document.getElementsByClassName("carousel_billedeCaelum");
