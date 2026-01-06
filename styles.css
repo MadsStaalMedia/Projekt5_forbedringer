@@ -120,7 +120,7 @@ header {
 /* overlay til burgermenu slutter  */
 
 .eventsal-side h2 {
-    color: var(--caelum-color);
+    color: var(--black);
 }
 
 .eventsal-side header {
@@ -139,6 +139,10 @@ header {
 .eventsal-side .overlay-content a.dropdown__link:hover {
   color: var(--header-color);
   
+}
+
+.eventsal-side .header__desktopNav {
+    text-shadow: 1px 1px 1px var(--black);
 }
 
 
@@ -396,6 +400,7 @@ p {
     border-radius: 0px 162px 162px 0px;
     padding: 30px 58px 20px 0px;
     top: 24px;
+    text-shadow: 1px 1px 1px var(--black);
 
     p {
         font-family: Aeonik, Arial, Helvetica, sans-serif;
@@ -1049,15 +1054,20 @@ p {
         background: lightgray url(img/hero/hero_oplevelser.webp) center / auto 100% no-repeat;
     }
 
-    .hero#eventsal {
-        background: lightgray url(img/hero/hero_eventsal.webp) center / auto 100% no-repeat;
-    }
+    
 
     .hero#kontakt {
         background: lightgray url(img/hero/hero_oplevelser.webp) center / auto 100% no-repeat;
     }
 
     .hero__textbox {
+        margin-top: 24px;
+        width: 50vw;
+        min-width: 600px;
+        border-radius: 0 50vw 50vw 0;
+    }
+
+    .hero__textbox_caelum {
         margin-top: 24px;
         width: 50vw;
         min-width: 600px;
