@@ -897,7 +897,6 @@ p {
         padding: 35px 0 25px 5%;
         background-color: var(--background-color);
         border-top: 5px solid var(--header-color);
-        color: var(--black);
         font-family: Aeonik, Arial, Helvetica, sans-serif;
         }
 
@@ -928,6 +927,8 @@ p {
     font-size: 1.2rem;
     font-weight: 600;
     line-height: 150%;
+    
+    text-shadow: 1px 1px 1px var(--black);
 }
 
 .accordion__button:after {
